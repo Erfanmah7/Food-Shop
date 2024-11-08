@@ -1,4 +1,6 @@
+import HomePage from "../components/templates/HomePage";
+
 function Home() {
-  return <>home</>;
+  return <HomePage />;
 }
 export default Home;
