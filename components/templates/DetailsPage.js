@@ -14,6 +14,8 @@ function DetailsPage(props) {
     recipe,
   } = props;
 
+  console.log(details);
+
   return (
     <div className={styles.container}>
       <h2>Details</h2>
@@ -70,6 +72,7 @@ function DetailsPage(props) {
         </div>
         <button>Add to Cart</button>
       </div>
+    
     </div>
   );
 }

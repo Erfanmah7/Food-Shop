@@ -2,7 +2,7 @@ import Card from "../modules/Card";
 import styles from "./MenuPage.module.css";
 
 function MenuPage({ data }) {
-  console.log(data);
+
 
   return (
     <div className={styles.container}>
