@@ -6,8 +6,10 @@ import styles from "./CategoriesPage.module.css";
 function CategoriesPage({ data }) {
   const router = useRouter();
 
+  //input & query url
   const [query, setQuery] = useState({ difficulty: "", time: "" });
 
+  //refresh => save query
   useEffect(() => {
     const { difficulty, time } = router.query;
     if (query.difficulty !== difficulty || query.time !== time) {
@@ -19,11 +21,9 @@ function CategoriesPage({ data }) {
     setQuery({ ...query, [e.target.name]: e.target.value });
   };
 
+  //push query
   const searchHandler = () => {
-    router.push({
-      pathname: "/categories",
-      query,
-    });
+    router.push({ pathname: "/categories", query });
   };
 
   return (
